@@ -1,0 +1,13 @@
+<%- include('../partials/header.ejs') %>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Welcome <%= name %>
+            </h2>
+            <form action="/logout?_method=DELETE" method="POST">
+                <button class="btn btn-lg btn-success" type='submit'>Logout</button></a>
+            </form>
+        </div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
